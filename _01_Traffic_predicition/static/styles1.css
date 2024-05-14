@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('BG.jpeg'); /* Corrected background-image property */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Default text color */
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 10px ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+    z-index: 1000; /* Ensure header stays on top of other content */
+}
+
+.header .container {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.header .logo {
+    max-width: 100px; /* Adjust logo size */
+}
+
+.header nav ul {
+    font-size: 2.5rem;
+    margin-left: 20px;
+    color:rgb(229, 229, 236);
+    list-style: center;
+    padding: 0;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.prediction-form {
+    background-color: rgba(10, 9, 9, 0.7); /* Slightly transparent background */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(236, 232, 232, 0.1);
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.prediction-form h2 {
+    font-size: 2rem;
+    color: #f5f0f0;
+    margin-bottom: 20px;
+}
+
+.prediction-form label {
+    font-size: 1.2rem;
+    color: #fffefe;
+}
+
+.prediction-form select,
+.prediction-form input[type="date"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.prediction-form input[type="submit"] {
+    background-color: #ff6600;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.prediction-form input[type="submit"]:hover {
+    background-color: #e65c00;
+}
+
+
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 100px;
+    color: rgb(220, 9, 9);
+    text-shadow: 0 0 10px rgb(0, 0, 0); /* Glow effect with a radius of 10px and semi-transparent color */
+}
+
+.hero p {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: rgb(230, 216, 216);
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+    
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #ff6600; /* Button background color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #e65c00; /* Hover background color */
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.footer-bottom p {
+    font-size: 0.9rem;
+}
+
+.footer-logo img {
+    max-width: 25px; /* Adjust logo size */
+}
+
+/* Other section styles (Features, Footer, etc.) */

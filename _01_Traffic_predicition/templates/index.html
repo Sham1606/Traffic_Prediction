@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<body>
+    <h2>Traffic Prediction</h2>
+    <form method="POST">
+        <label for="date">Select Date:</label>
+        <input type="date" id="date" name="date" required><br><br>
+        
+        <label for="weather">Weather:</label>
+        <select name="weather" id="weather" required>
+            <option value="1">Mostly cloudy</option>
+            <option value="2">Partly cloudy</option>
+            <option value="3">Overcast</option>
+            <option value="4">Clear</option>
+            <option value="5">Breezy and Mostly Cloudy</option>
+            <option value="6">Breezy and Overcast</option>
+            <option value="7">Breezy and Partly Cloudy</option>
+            <option value="8">Foggy</option>
+            
+        </select>
+        <!-- <input type="number" id="weather" name="weather" required><br><br> -->
+         <br><br>
+        <label for="funx">Special Occasion:</label>
+        <select name="funx" id="funx" required>
+            <option value="1">YES</option>
+            <option value="0">NO</option>
+        </select>
+        <br><br>
+        
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>

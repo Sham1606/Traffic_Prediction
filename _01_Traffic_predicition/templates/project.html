@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles1.css') }}">
+
+</head>
+<body>
+     
+
+<header class="header">
+    <div class="container">
+        <!-- Adjusted image path to a relative path -->
+        <img src="LOGO.png" alt="Traffic Predictor Logo" class="logo">
+        <nav>
+            <ul>
+                <li>PUDUCHERRY TECHNOLOGICAL UNIVERSITY</li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h1>Welcome to Traffic Predictor</h1>
+        <p>Get accurate predictions for traffic conditions in your area.</p>
+        <a href="{{ url_for('project') }}" class="cta-btn">Get Started</a>
+    </div>
+</section>
+
+<section class="features">
+    <div class="container">
+        <h2>Key Features</h2>
+        <div class="feature-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Real-Time Traffic Data</h3>
+            <p>Access up-to-date traffic information for accurate predictions.</p>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-route"></i>
+            <h3>Customizable Routes</h3>
+            <p>Create and save personalized routes to monitor traffic conditions.</p>
+        </div>
+        
+    </div>
+</section>
+
+<!-- Other sections (How It Works, Testimonials, About Us, Blog, Contact) -->
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <!-- Adjusted image path to a relative path -->
+                <img src="LOGO.png" alt="Traffic Predictor Logo">
+            </div>
+            
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Traffic Predictor. All rights reserved.</p>
+            <!-- Using Flask's url_for to generate the link -->
+            <a href="{{ url_for('project') }}">Go Back to Prediction Page</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

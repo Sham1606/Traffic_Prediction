@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Styles2.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Prediction Results</h2>
+        <img src="data:image/png;base64,{{ plot_data }}" alt="Prediction Plot">
+        <br>
+        <fieldset>
+            <legend>Legend:</legend>
+            <ul>
+                <li class="legend-item"><span class="low"></span>Low: {{ low_value }}</li>
+                <li class="legend-item"><span class="medium"></span>Medium: {{ medium_value }}</li>
+                <li class="legend-item"><span class="high"></span>High: {{ high_value }}</li>
+            </ul>
+        </fieldset>
+        <br>
+        <a href="{{ url_for('home') }}" class="button">Go Back to Prediction Page</a>
+    </div>
+</body>
+</html>
